@@ -1,0 +1,35 @@
+<h2 class="page-title">👤 Your Profile</h2>
+
+<div class="profile-info">
+  <p><strong>Username:</strong> {{ user.username }}</p>
+  <p><strong>Email:</strong> {{ user.email || 'Not Provided' }}</p>
+</div>
+
+<hr />
+
+<h3>Recently Lent Books</h3>
+<div ng-if="lentBooks.length === 0">
+  <p>No books lent yet.</p>
+</div>
+<table ng-if="lentBooks.length > 0">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="book in lentBooks">
+      <td>{{ book.title }}</td>
+      <td>{{ book.author }}</td>
+      <td><button ng-click="returnBook(book)">Return</button></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div class="nav-button-container">
+  <button class="nav-button" onclick="location.href='#!/books'">📘 Go to Books</button>
+  <button class="nav-button logout-btn" ng-click="logout()">🚪 Logout</button>
+</div>

@@ -1,0 +1,11 @@
+<div class="form-container">
+    <h1>Create Account</h1>
+    <form ng-submit="register()">
+      <input type="text" placeholder="Username" ng-model="user.username" required />
+      <input type="email" placeholder="Email" ng-model="user.email" required />
+      <input type="password" placeholder="Password" ng-model="user.password" required />
+      <button type="submit">Register</button>
+      <p>Already registered? <a href="#!/">Login</a></p>
+    </form>
+  </div>
+  

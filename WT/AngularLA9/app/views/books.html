@@ -1,0 +1,30 @@
+<h2 class="page-title">📚 Available Books</h2>
+
+<div class="nav-button-container">
+  <button class="nav-button" onclick="location.href='#!/profile'">👤 Go to Profile</button>
+</div>
+
+<div class="search-bar">
+  <input type="text" placeholder="🔍 Search by title, author or category..." ng-model="searchText" />
+</div>
+
+<div class="table-container">
+  <table class="books-table">
+    <thead>
+      <tr>
+        <th>📖 Title</th>
+        <th>✍️ Author</th>
+        <th>🔧 Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="book in books | filter:searchText">
+        <td><input class="editable-input" ng-model="book.title" /></td>
+        <td><input class="editable-input" ng-model="book.author" /></td>
+        <td><button class="save-btn" ng-click="save(book)">💾 Save</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+

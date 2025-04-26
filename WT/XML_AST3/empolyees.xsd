@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="employees">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="employee" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="empName">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="fname" type="xs:string"/>
+                                        <xs:element name="lname" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DOB" type="xs:date"/>
+                            <xs:element name="contactNo" type="xs:string"/>
+                            <xs:element name="address" type="xs:string"/>
+                            <xs:element name="gender">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="male"/>
+                                        <xs:enumeration value="female"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="designation" type="xs:string"/>
+                            <xs:element name="dateOfJoin" type="xs:date"/>
+                            <xs:element name="salary" type="xs:decimal"/>
+                            <xs:element name="department" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

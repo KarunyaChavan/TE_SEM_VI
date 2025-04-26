@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="bookstoreApp">
+<head>
+  <meta charset="UTF-8" />
+  <title>Elegant Bookstore</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  
+  <!-- App Scripts -->
+  <script src="app/app.js"></script>
+  <script src="app/controllers/authController.js"></script>
+  <script src="app/controllers/booksController.js"></script>
+  <script src="app/controllers/profileController.js"></script>
+  <script src="app/services/authService.js"></script>
+
+  <style>
+    /* Ensure ng-view has height for visibility */
+    ng-view {
+      display: block;
+      min-height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div ng-view></div>
+  </div>
+</body>
+</html>

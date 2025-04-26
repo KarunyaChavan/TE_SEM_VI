@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #2980b9;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    margin-top: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  th {
+    background: #2980b9;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .editable-input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  .search-bar input {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+  }
+  
+  .profile-section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    gap: 40px;
+  }
+  
+  .profile-info, .lent-books {
+    flex: 1;
+  }
+  
+  .lent-books ul {
+    padding-left: 20px;
+  }
+  
+.lent-books {
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #444;
+}
+  
+.profile-info {
+    margin: 20px;
+    font-size: 16px;
+}
+  

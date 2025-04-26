@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Diamond</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .darkened {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header style="background: rgba(0,0,0, 0.6); padding: 20px 0; position: fixed; width: 100%; top: 0; z-index: 1000;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; padding: 0 20px;">
+            <h1 class="logo" style="color: white; font-size: 1.8rem; font-weight: bold; margin: 0;">RED DIAMOND</h1>
+            <nav>
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 25px;">
+                    <li><a href="#home" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 600; padding: 10px 15px; transition: all 0.3s; border-radius: 5px;" 
+                           onmouseover="this.style.background='rgba(255, 255, 255, 0.2)'; this.style.color='#D4AF37';"
+                           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#fff';">HOME</a></li>
+                    <!-- <li><a href="#menu" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 600; padding: 10px 15px; transition: all 0.3s; border-radius: 5px;" 
+                           onmouseover="this.style.backgroundColor='rgba(255, 255, 255, 0.2)'; this.style.color='#D4AF37';"
+                           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#fff';">MENU</a></li> -->
+                    <li><a href="#about" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 600; padding: 10px 15px; transition: all 0.3s; border-radius: 5px;" 
+                           onmouseover="this.style.backgroundColor='rgba(255, 255, 255, 0.2)'; this.style.color='#D4AF37';"
+                           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#fff';">ABOUT US</a></li>
+                    <li><a href="#reservations" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 600; padding: 10px 15px; transition: all 0.3s; border-radius: 5px;" 
+                           onmouseover="this.style.backgroundColor='rgba(255, 255, 255, 0.2)'; this.style.color='#D4AF37';"
+                           onmouseout="this.style.backgroundColor='transparent'; this.style.color='#fff';">RESERVATIONS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="assets/videoBgM.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">RED DIAMOND</h2>
+            <p class="hero-subtitle">CULINARY EXCELLENCE REDEFINED</p>
+            <a href="#menu" class="hero-button">EXPLORE MENU</a>
+        </div>
+    </section>
+
+    <section id="menu" class="featured-dishes">
+    <h2>Featured Dishes</h2>
+    <div class="dishes-grid">
+        <div class="dish-item">
+            <img src="assets/dish1.jpeg" alt="Dish 1">
+            <div class="dish-content">
+                <h3 class="dish-name">Truffle-Infused Wagyu Ribeye</h3>
+                <p class="dish-description">A rich, flavorful ribeye steak, enhanced with a delicate truffle infusion.</p>
+                <div class="dish-footer">
+                    <p class="dish-price">$55.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="dish-item">
+            <img src="assets/dish2.jpg" alt="Dish 2">
+            <div class="dish-content">
+                <h3 class="dish-name">Pan-Seared Duck Breast</h3>
+                <p class="dish-description">Crispy skin duck breast served with a tangy cherry reduction.</p>
+                <div class="dish-footer">
+                    <p class="dish-price">$45.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="dish-item">
+            <img src="assets/dish3.jpg" alt="Dish 3">
+            <div class="dish-content">
+                <h3 class="dish-name">Lobster Thermidor</h3>
+                <p class="dish-description">Luxurious lobster in a creamy, rich thermidor sauce.</p>
+                <div class="dish-footer">
+                    <p class="dish-price">$70.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="dish-item">
+            <img src="assets/food1.jpg" alt="Dish 4">
+            <div class="dish-content">
+                <h3 class="dish-name">La Ensalada</h3>
+                <p class="dish-description">A vibrant salad with fresh vegetables and a zesty vinaigrette.</p>
+                <div class="dish-footer">
+                    <p class="dish-price">$18.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="dish-item">
+            <img src="assets/food2.jpg" alt="Dish 5">
+            <div class="dish-content">
+                <h3 class="dish-name">El Dessert</h3>
+                <p class="dish-description">A decadent chocolate mousse with a hint of raspberry.</p>
+                <div class="dish-footer">
+                    <p class="dish-price">$12.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="dish-item">
+            <img src="assets/food3.jpeg" alt="Dish 5">
+            <div class="dish-content">
+                <h3 class="dish-name">Biryani</h3>
+                <p class="dish-description">A decent mix of chicken, rice and spieces to lift up heaven.</p>
+                <div class="dish-footer">
+                    <p class="dish-price">$15.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Story</h3>
+                <p>Since 2010, Red Diamond has been at the forefront of culinary innovation. Our mission is to offer an unforgettable dining experience with exquisite dishes that combine tradition and creativity. We pride ourselves on using only the freshest ingredients to craft each dish, and our menu constantly evolves to bring new culinary trends to our guests.</p>
+                <p>Our chefs are dedicated to creating dishes that are not only delicious but also visually stunning. Whether you're celebrating a special occasion or enjoying a casual meal, Red Diamond offers an atmosphere where every meal is an occasion</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/about.jpg" alt="Restaurant Interior">
+            </div>
+        </div>
+    </section>
+
+    <section id="reservations" class="reservations">
+        <h2>Reservations</h2>
+        <form id="reservation-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Reservation Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <select id="time" required>
+                    <option value="">Select a time</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                </select>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const nextButton = document.querySelector('.next');
+        const prevButton = document.querySelector('.prev');
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateCarousel();
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateCarousel();
+        });
+    </script>
+</body>
+</html>

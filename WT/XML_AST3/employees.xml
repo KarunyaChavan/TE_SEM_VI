@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employees SYSTEM "employees.dtd">
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+<employees>
+    <employee>
+        <empName>
+            <fname>Michael</fname>
+            <lname>De Santa</lname>
+        </empName>
+        <DOB>1972-01-21</DOB>
+        <contactNo>1112233445</contactNo>
+        <address>Rockford Hills, Los Santos</address>
+        <gender>male</gender>
+        <designation>Software Engineer</designation>
+        <dateOfJoin>2010-04-15</dateOfJoin>
+        <salary>95000</salary>
+        <department>Development</department>
+    </employee>
+    <employee>
+        <empName>
+            <fname>Franklin</fname>
+            <lname>Clinton</lname>
+        </empName>
+        <DOB>1988-03-15</DOB>
+        <contactNo>2223344556</contactNo>
+        <address>Strawberry, Los Santos</address>
+        <gender>male</gender>
+        <designation>System Analyst</designation>
+        <dateOfJoin>2015-07-10</dateOfJoin>
+        <salary>80000</salary>
+        <department>IT Support</department>
+    </employee>
+    <employee>
+        <empName>
+            <fname>Trevor</fname>
+            <lname>Philips</lname>
+        </empName>
+        <DOB>1967-11-14</DOB>
+        <contactNo>3334455667</contactNo>
+        <address>Sandy Shores, Blaine County</address>
+        <gender>male</gender>
+        <designation>Network Administrator</designation>
+        <dateOfJoin>2018-05-20</dateOfJoin>
+        <salary>87000</salary>
+        <department>Networking</department>
+    </employee>
+</employees>
