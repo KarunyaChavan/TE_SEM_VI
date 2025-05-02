@@ -46,8 +46,12 @@ def aStar(start_state):
     open_set = []
     explored = []
 
-    heapq.heappush(open_set, (calculate_heuristics(start_state), 0, start_state))
-    parents = {tuple(map(tuple, start_state)): None}
+    heapq.heappush(open_set, (calculate_heuristics(start_state), 0, start_state)) #The tuple represents (f_score, g_score, state)
+
+    #To keep track how we got to each puzzle state - used to later to recontruct the solution path,
+    parents = {tuple(map(tuple, start_state)) : None} #Converting list of lists to tuple of tuples so it can be a dict key
+    
+    #Storing how many moves g, we took to reach the state
     g_scores = {tuple(map(tuple, start_state)): 0}
 
     while open_set:
@@ -64,9 +68,11 @@ def aStar(start_state):
         for neighbor in get_neighbors(curr_state):
             neighbor_tuple = tuple(map(tuple, neighbor))
             g_score = g + 1
+            #If found a new or faster way
             if neighbor_tuple not in g_scores or g_score < g_scores[neighbor_tuple]:
                 g_scores[neighbor_tuple] = g_score
                 parents[neighbor_tuple] = curr_state
+                #Add this neighbor to the queue to be explored later
                 heapq.heappush(open_set, (g_score + calculate_heuristics(neighbor), g_score, neighbor))
 
     return explored[-10:], "failed"
